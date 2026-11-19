@@ -584,7 +584,7 @@ namespace RE::BSScript
 				return false;
 			}
 
-			a_var = std::move(object);
+			a_var.SetObject(std::move(object), typeInfo.get());
 			return true;
 		}();
 
